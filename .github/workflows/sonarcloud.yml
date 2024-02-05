@@ -1,8 +1,8 @@
 name: SonarCloud
 on:
   push:
-    branches:
-      - master
+    tags:
+      - '*'  # Questo attiva il workflow su ogni tag
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
