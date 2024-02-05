@@ -3,8 +3,6 @@ on:
   push:
     tags:
       - '*'  # Questo attiva il workflow su ogni tag
-  pull_request:
-    types: [opened, synchronize, reopened]
 jobs:
   build:
     name: Build and analyze
